@@ -123,8 +123,6 @@ export const Projects = () => {
                   >
                     <a
                       href={project.githubLink}
-                      
-                     
                       className="flex items-center gap-1"
                     >
                       <Github className="h-4 w-4" />
@@ -134,12 +132,9 @@ export const Projects = () => {
                   <Button
                     size="sm"
                     className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
-                  
                   >
                     <a
                       href={project.liveLink}
-                  
-                    
                       className="flex items-center gap-1"
                     >
                       <ExternalLink className="h-4 w-4" />
