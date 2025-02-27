@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(`"overflow-x-hidden" ${outfit.className}`)}>
+      <body className={cn(` ${outfit.className}`)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

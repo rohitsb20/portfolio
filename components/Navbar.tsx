@@ -40,7 +40,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           : "bg-transparent py-5"
       )}
     >
-      <div className="container mx-auto px-2 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-10 flex items-center justify-between">
         <Link
           href="/"
           className="text-xl md:text-2xl font-bold gradient-text transition-colors duration-300"

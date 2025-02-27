@@ -49,13 +49,14 @@ export const Contact = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
@@ -64,7 +65,7 @@ export const Contact = () => {
     <section
       ref={sectionRef}
       id="contact"
-      className="py-20 opacity-0 transition-opacity duration-1000 relative"
+      className="py-20 opacity-0 transition-opacity duration-1000 relative overflow-hidden"
     >
       {/* Gradient background */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-purple-400/10 rounded-full filter blur-3xl"></div>

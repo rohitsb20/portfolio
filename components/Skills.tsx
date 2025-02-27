@@ -100,7 +100,11 @@ export const Skills = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20" id="skills">
+    <section
+      ref={sectionRef}
+      className="py-20 relative overflow-hidden"
+      id="skills"
+    >
       {/* Gradient background */}
       <div className="absolute top-40 right-20 w-80 h-80 bg-purple-400/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-40 left-20 w-80 h-80 bg-pink-400/10 rounded-full filter blur-3xl"></div>

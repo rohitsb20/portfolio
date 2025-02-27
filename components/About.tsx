@@ -44,13 +44,13 @@ export const About = ()=> {
     <section
       ref={sectionRef}
       id="about"
-      className="py-20 opacity-0 transition-opacity duration-1000 relative"
+      className="py-20 opacity-0 transition-opacity duration-1000 relative overflow-hidden "
     >
       {/* Gradient background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-400/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-400/10 rounded-full filter blur-3xl"></div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10 ">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="gradient-text">Me</span>
         </h2>

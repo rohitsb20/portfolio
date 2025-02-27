@@ -35,7 +35,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="home"
-      className="min-h-screen flex items-center pt-20 relative overflow-hidden"
+      className="min-h-screen  flex items-center pt-20 relative overflow-hidden"
     >
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-radial from-purple-500/10 via-transparent to-transparent dark:from-purple-500/5"></div>
@@ -49,7 +49,7 @@ export default function Hero() {
               Hi, I&#39;m <span className="gradient-text">Rohit Bhadouria</span>
             </h1>
             <p className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-300 text-xl text-muted-foreground">
-              A passionate Frontend Developer specializing in building
+              A passionate FullStack Developer specializing in building
               exceptional digital experiences with modern web technologies.
             </p>
             <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-500 flex space-x-2">

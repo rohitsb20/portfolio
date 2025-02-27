@@ -82,7 +82,8 @@ export const Projects = () => {
     };
   }, []);
   return (
-    <section ref={sectionRef} id="projects" className="py-20 relative">
+    <section ref={sectionRef} id="projects" 
+    className="py-20 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-400/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-400/10 rounded-full filter blur-3xl"></div>
