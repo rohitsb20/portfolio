@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
+
 import {
   FaGit,
   FaCss3Alt,
@@ -109,24 +109,20 @@ export const Skills = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="gradient-text">Skills</span>
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-10">
+          {skills.map((skill) => (
             <div
               key={skill.name}
-              className="skill-item opacity-0 translate-y-10
+              className="skill-item opacity-0 translate-y-10 
                         transition-all duration-300 flex flex-col items-center"
             >
               <div className="skill-icon bg-gradient-to-br from-purple-500/5 to-pink-500/5 p-4 rounded-xl shadow-md border border-white/10 dark:border-white/5 hover:border-purple-500/30 w-20 h-20 flex items-center justify-center mb-3skill-icon">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
-                <Image
-                  src={skill.icon || "/placeholder.svg"}
-                  alt={skill.name}
-                  width={80}
-                  height={80}
-                  className="w-12 h-12 object-contain relative z-10"
-                />
+                <div className="text-5xl z-10">
+                  {skill.icon}
+                </div>
               </div>
-              <span className="capitalise text-sm font-medium">{skill.name}</span>
+              <span className="capitalise text-sm font-medium ">{skill.name}</span>
             </div>
           ))}
         </div>
