@@ -3,9 +3,11 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./theme-button";
+import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { title: "Home", path: "/" },
+  { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
   { title: "Contact", path: "#contact" },
   { title: "Skills", path: "#skills" },
@@ -14,7 +16,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +60,42 @@ const Navbar = () => {
           ))}
           <ThemeToggle />
         </nav>
+
+        {/* Mobile Navigation Toggle */}
+
+        <div className="md:hidden flex items-center ">
+          <ThemeToggle />
+          <Button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="ml-2 p-2 text-foreground"
+            aria-label="Toggle Menu"
+          >
+            {mobileMenuOpen ? (
+              <X size={24} color="purple" />
+            ) : (
+              <Menu size={24} color="purple" />
+            )}
+          </Button>
+        </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden bg-background/95 backdrop-blur-md shadow-md">
+          <div className="container mx-auto px-4 py-4 flex flex-col space-x-4 bg-red-100">
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={link.path}
+                className=" text-foreground hover:text-primary transition-colors duration-300 py-2 "
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      )}
     </header>
   );
 };
