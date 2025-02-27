@@ -1,25 +1,27 @@
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 
 const socials = [
-    {
-        icon : <Github size={24} />,
-        href : "#",
-        style: "text-muted-foreground hover:text-primary  transition-colors duration-300"
-    },
-    {
-        icon : <Linkedin size={24} />,
-        href : "#",
-        style: "text-muted-foreground hover:text-primary transition-colors duration-300"
-    },
-    {
-        icon : <Twitter size={24} />,
-        href : "#",
-        style: "text-muted-foreground hover:text-primary transition-colors duration-300"
-    },
-   
-]
+  {
+    icon: <FiGithub size={24} />,
+    href: "#",
+    style:
+      "text-muted-foreground hover:text-primary  transition-colors duration-300",
+  },
+  {
+    icon: <FiLinkedin size={24} />,
+    href: "#",
+    style:
+      "text-muted-foreground hover:text-primary transition-colors duration-300",
+  },
+  {
+    icon: <FiTwitter size={24} />,
+    href: "#",
+    style:
+      "text-muted-foreground hover:text-primary transition-colors duration-300",
+  },
+];
 
 
 export const Footer = () => {
