@@ -8,34 +8,41 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
+    title: "Cakify",
     description:
-      "A fully responsive e-commerce platform built with Next.js and Tailwind CSS with cart functionality and payment integration.",
+      "A fully responsive e-commerce platform built with Reactjs and Tailwind CSS with cart functionality and payment integration.",
     image: "/3",
-    tags: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB"],
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Razorpay",
+      "node Js",
+      "Express Js",
+      "MongoDB",
+    ],
     liveLink: "#link",
-    githubLink: "#",
+    githubLink: "https://github.com/rohitsb20/cakeapp",
   },
 
   {
     id: 2,
     title: "Portfolio Website",
     description:
-      "A modern portfolio website with dark mode, animations, and responsive design.",
-    image: "/3",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      "A modern portfolio website with dark mode, animations, using Nextjs , Tailwind Css and responsive design.",
+    image: "/images/portfolio.png",
+    tags: ["Next.js", "Tailwind CSS", "shadcn", "TypeScript"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/rohitsb20/portfolio",
   },
   {
     id: 3,
     title: "Movietankapp",
     description:
       "A movie app that fetches data from the TMDB API and displays popular movies, top-rated movies, and upcoming movies.",
-    image: "/3",
-    tags: ["React", "Tailwind CSS", "TMDB API"],
-    liveLink: "#",
-    githubLink: "#",
+    image: "/images/movie.png",
+    tags: ["Next JS", "Tailwind CSS", "TMDB API"],
+    liveLink: "https://movietankapp.vercel.app/",
+    githubLink: "https://github.com/rohitsb20/movieapp",
   },
   {
     id: 4,
@@ -43,9 +50,9 @@ const projects = [
     description:
       "A real-time chat application with rooms and user authentication.",
     image: "/3",
-    tags: ["React", "Socket.io", "Node.js", "Express"],
+    tags: ["React JS", "Socket.io", "Node.js", "Express", "MongoDB"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/rohitsb20/chatapp1",
   },
 ];
 
