@@ -11,7 +11,7 @@ const projects = [
     title: "E-Commerce Website",
     description:
       "A fully responsive e-commerce platform built with Next.js and Tailwind CSS with cart functionality and payment integration.",
-    image: "/images/profile.jpg",
+    image: "/3",
     tags: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB"],
     liveLink: "#link",
     githubLink: "#",
@@ -22,7 +22,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A modern portfolio website with dark mode, animations, and responsive design.",
-    image: "/images/profile.jpg",
+    image: "/3",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
     liveLink: "#",
     githubLink: "#",
@@ -32,7 +32,7 @@ const projects = [
     title: "Movietankapp",
     description:
       "A movie app that fetches data from the TMDB API and displays popular movies, top-rated movies, and upcoming movies.",
-    image: "/images/profile.jpg",
+    image: "/3",
     tags: ["React", "Tailwind CSS", "TMDB API"],
     liveLink: "#",
     githubLink: "#",
@@ -42,7 +42,7 @@ const projects = [
     title: "Chat App",
     description:
       "A real-time chat application with rooms and user authentication.",
-    image: "/images/profile.jpg",
+    image: "/3",
     tags: ["React", "Socket.io", "Node.js", "Express"],
     liveLink: "#",
     githubLink: "#",
