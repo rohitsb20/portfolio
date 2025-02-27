@@ -52,9 +52,9 @@ export default function Hero() {
               A passionate Frontend Developer specializing in building
               exceptional digital experiences with modern web technologies.
             </p>
-            <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-500 flex space-x-4">
+            <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-500 flex space-x-2">
               <Button
-                size="lg"
+                size="sm"
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
                 asChild
               >
@@ -62,7 +62,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                size="lg"
+                size="sm"
                 className="gradient-border"
                 asChild
               >
