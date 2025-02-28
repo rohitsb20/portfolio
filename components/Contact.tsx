@@ -151,7 +151,7 @@ export const Contact = () => {
       </div>
 
       {/* form */}
-      <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-300 mt-4">
+      <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-300 mt-6">
         <form
           onSubmit={handleSubmit}
           className="space-y-6 p-6 bg-gradient-to-br from-purple-500/5 to-pink-500/5 backdrop-blur-sm rounded-xl border border-white/10 dark:border-white/5"
