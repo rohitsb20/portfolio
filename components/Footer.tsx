@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   {
     icon: <FiGithub size={24} />,
-    href: "#",
+    href: "https://github.com/rohitsb20/",
     style:
       "text-muted-foreground hover:text-primary  transition-colors duration-300",
   },
@@ -16,8 +16,8 @@ const socials = [
       "text-muted-foreground hover:text-primary transition-colors duration-300",
   },
   {
-    icon: <FiTwitter size={24} />,
-    href: "#",
+    icon: <FaXTwitter size={24} />,
+    href: "https://x.com/rohitbhado80177",
     style:
       "text-muted-foreground hover:text-primary transition-colors duration-300",
   },

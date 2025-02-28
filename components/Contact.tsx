@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Send } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
+import toast from "react-hot-toast";
 
 export const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -15,6 +16,8 @@ export const Contact = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -22,9 +25,43 @@ export const Contact = () => {
     setFormdata((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formdata);
+
+    try {
+      setIsSubmitting(true);
+
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formdata),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      // Reset form after successful submission
+      setFormdata({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      // Show success message
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      // Show error message
+      console.log(error);
+      
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   useEffect(() => {
@@ -166,9 +203,16 @@ export const Contact = () => {
           </div>
           <Button
             type="submit"
+            disabled={isSubmitting}
             className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
           >
-            <Send className="mr-2 h-4 w-4" /> Send Message
+            {isSubmitting ? (
+              <>Processing...</>
+            ) : (
+              <>
+                <Send className="mr-2 h-4 w-4" /> Send Message
+              </>
+            )}
           </Button>
         </form>
       </div>
