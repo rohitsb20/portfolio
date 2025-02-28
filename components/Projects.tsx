@@ -10,8 +10,8 @@ const projects = [
     id: 1,
     title: "Cakify",
     description:
-      "A fully responsive e-commerce platform built with Reactjs and Tailwind CSS with cart functionality and payment integration.",
-    image: "/3",
+      "A fully responsive cake selling platform built with Reactjs and Tailwind CSS with cart functionality and payment integration.",
+    image: "/images/cakify.png",
     tags: [
       "React Js",
       "Tailwind CSS",
@@ -46,10 +46,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "Chat App",
+    title: "Chat App (Talkio)",
     description:
-      "A real-time chat application with rooms and user authentication.",
-    image: "/3",
+      "A real-time chat application with notification alert and user authentication.",
+    image: "/images/talkio.png",
     tags: ["React JS", "Socket.io", "Node.js", "Express", "MongoDB"],
     liveLink: "#",
     githubLink: "https://github.com/rohitsb20/chatapp1",
