@@ -39,7 +39,7 @@ const projects = [
     title: "Movietankapp",
     description:
       "A movie app that fetches data from the TMDB API and displays popular movies, top-rated movies, and upcoming movies.",
-    image: "/images/movie.png",
+    image: "/images/movie.PNG",
     tags: ["Next JS", "Tailwind CSS", "TMDB API"],
     liveLink: "https://movietankapp.vercel.app/",
     githubLink: "https://github.com/rohitsb20/movieapp",
