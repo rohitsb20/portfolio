@@ -29,7 +29,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A modern portfolio website with dark mode, animations, using Nextjs , Tailwind Css and responsive design.",
-    image: "/images/portfolio.png",
+    image: "/images/portfolio.PNG",
     tags: ["Next.js", "Tailwind CSS", "shadcn", "TypeScript"],
     liveLink: "#",
     githubLink: "https://github.com/rohitsb20/portfolio",
